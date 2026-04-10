@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#feddb4",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed-variant": "#584325",
+                    "tertiary-container": "#cca72f",
+                    "inverse-on-surface": "#ebf2f1",
+                    "surface": "#f4fbfa",
+                    "surface-container-low": "#eef5f4",
+                    "background": "#f4fbfa",
+                    "inverse-primary": "#92d6a4",
+                    "inverse-surface": "#2b3231",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "tertiary-fixed": "#ffe088",
+                    "surface-variant": "#dde4e3",
+                    "tertiary": "#735c00",
+                    "primary": "#286a42",
+                    "surface-container-highest": "#dde4e3",
+                    "surface-container-high": "#e2eae9",
+                    "on-primary-container": "#00361a",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#786040",
+                    "secondary-fixed": "#feddb4",
+                    "primary-fixed": "#adf2be",
+                    "on-background": "#161d1d",
+                    "surface-dim": "#d4dbdb",
+                    "surface-tint": "#286a42",
+                    "on-tertiary-container": "#4e3d00",
+                    "on-surface": "#161d1d",
+                    "primary-fixed-dim": "#92d6a4",
+                    "on-surface-variant": "#404941",
+                    "primary-container": "#61a375",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "secondary": "#725a3a",
+                    "outline": "#707970",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#241a00",
+                    "on-secondary-fixed": "#281801",
+                    "on-primary-fixed": "#00210e",
+                    "surface-container": "#e8efee",
+                    "surface-bright": "#f4fbfa",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#e0c29a",
+                    "on-primary-fixed-variant": "#07522c",
+                    "outline-variant": "#c0c9be"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg-surface text-on-background font-body selection:bg-secondary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-[100] bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(22,29,29,0.06)] h-20 flex items-center">
+<div class="flex justify-between items-center max-w-screen-2xl mx-auto px-12 w-full relative">
+<div class="font-headline italic text-2xl text-emerald-900 dark:text-emerald-100 tracking-tight">Jaydev Ayurved</div>
+<nav class="hidden md:flex items-center gap-8 font-headline text-base tracking-wide">
+<a class="text-emerald-800 dark:text-emerald-400 border-b-2 border-emerald-800 pb-1" href="#rituals">Rituals</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-900 transition-colors" href="#about">About</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-900 transition-colors" href="#booking">Consultation</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-900 transition-colors" href="#reviews">Reviews</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="text-emerald-900 dark:text-emerald-500 hover:opacity-80 transition-all">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+<button class="text-emerald-900 dark:text-emerald-500 hover:opacity-80 transition-all">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+<div class="bg-stone-100 dark:bg-stone-800 h-[1px] w-full absolute bottom-[-16px] left-0"></div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section id="hero" class="relative min-h-[921px] flex items-center px-12 overflow-hidden bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
+<div class="z-10 max-w-2xl hero-content">
+<span class="font-label uppercase tracking-[0.2em] text-primary text-xs font-bold mb-6 block">Established 1984</span>
+<h1 class="font-headline text-6xl md:text-8xl text-on-background leading-[1.1] mb-8">
+                        Ancient <span class="italic text-primary">Wisdom</span>,<br/>Modern Healing.
+                    </h1>
+<p class="text-on-surface-variant text-xl leading-relaxed mb-10 max-w-lg">
+                        At Jaydev Ayurved, we bridge the gap between millennia-old Vedic traditions and modern clinical precision to restore your biological rhythm.
+                    </p>
+<div class="flex items-center gap-6">
+<a href="#booking" class="bg-gradient-to-br from-primary to-primary-container text-white px-10 py-5 rounded-xl font-bold manrope hover:opacity-90 transition-all shadow-lg cursor-pointer">
+                            Begin Your Journey
+                        </a>
+<a href="#rituals" class="text-primary font-bold border-b-2 border-primary/20 hover:border-primary transition-all pb-1 cursor-pointer">
+                            Explore Our Rituals
+                        </a>
+</div>
+</div>
+<div class="relative group hero-image">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-secondary-container/30 rounded-full blur-3xl"></div>
+<div class="rounded-2xl overflow-hidden shadow-2xl transform rotate-2 group-hover:rotate-0 transition-transform duration-700">
+<img alt="Ayurvedic oil treatment" class="w-full h-[600px] object-cover" data-alt="Close up of therapeutic herbal oil being poured into a traditional clay bowl with fresh green leaves on the side, soft morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC7pqLxIG3dN65ijQR4PdrDjATCH6wojwL55yqNYZGfEz5AOzFrl5kS4YC_zhO55TxN006NfiFneDnIMq7Si5qxBsnadztoXyo1ZExDC5InuyqG_WyHR6BSxPbZUNYDDUEFufo9fRywq7FaYlgWmHhzXr_wKHDb5zDm05khQuujC23n1FLdUw0xZ0X7IEYXBlpqu5ZoQbWQlkjbK0LKSeKvOBFO2T503TGPBC9dME0izGeghub1iR7U-Q33t92KOb197VYsENUEJLO"/>
+</div>
+<div class="absolute -bottom-8 -right-8 bg-surface-container-lowest p-8 rounded-xl shadow-xl max-w-xs border border-outline-variant/10">
+<p class="font-headline italic text-lg text-primary mb-2">"Health is not just the absence of disease, but the presence of vitality."</p>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Vedic Principles</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Ayurveda -->
+<section id="about" class="py-32 px-12 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-24">
+<div class="lg:col-span-1 fade-in-left">
+<h2 class="font-headline text-5xl text-on-background mb-8">The Alchemy of Being</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                            Ayurveda is more than medicine; it is a profound understanding of the elements that compose us&mdash;Earth, Water, Fire, Air, and Ether.
+                        </p>
+<div class="bg-surface-container-high h-[1px] w-full mb-8"></div>
+<ul class="space-y-6 font-label text-sm uppercase tracking-widest text-primary font-bold">
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-base">eco</span> Dosha Balancing</li>
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-base">spa</span> Elemental Harmony</li>
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-base">mindfulness</span> Spiritual Vitality</li>
+</ul>
+</div>
+<div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow fade-in-up">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="font-headline text-2xl mb-4">Holistic Diagnosis</h3>
+<p class="text-on-surface-variant leading-relaxed">We look beyond symptoms, analyzing the root cause of imbalance through traditional Nadi Pariksha and modern diagnostic tools.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow fade-in-up delay-200">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="biotech">biotech</span>
+<h3 class="font-headline text-2xl mb-4">Refined Herbology</h3>
+<p class="text-on-surface-variant leading-relaxed">Our apothecary uses wild-harvested botanicals processed through contemporary extraction methods for maximum bioavailability.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Speciality & What We Do -->
+<section id="rituals" class="py-32 px-12 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto">
+<div class="text-center mb-20 fade-in-up">
+<span class="font-label uppercase tracking-widest text-primary text-xs font-bold mb-4 block">Our Speciality</span>
+<h2 class="font-headline text-5xl text-on-background">Clinical Excellence in Vedic Healing</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="relative h-[450px] rounded-xl overflow-hidden group">
+<img alt="Pulse diagnosis" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A practitioner's hand feeling a patient's pulse on the wrist, serene clinical setting with warm natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoqlNyF59qVu44GmuHTSvNTDDbh44681lluWf-_ZVFlqEPQ9v-9yOn8OP9eX47BrVkUud0h0wPFYP5g3NBYvxAk_OVfX1dw3hGJlnLIj1kyx0q5WOEtEntNVHeMupDT3uBD-894kbASZtTM6AnIbjImGic6Cb2Gb49c1MO1jJyrP7dIZsVXlSFyxO7rJxbjQAUgE0S816Kt0p0ZvhSJ9qfl22zhrQl0oLcKikl3L20VvTbJK2nKFRZCB1c42M1F18dH0Za2r6-FEfC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-emerald-950/90 to-transparent flex flex-col justify-end p-8">
+<h4 class="text-white font-headline text-2xl mb-2">Pulse Diagnosis</h4>
+<p class="text-white/80 text-sm">Nadi Pariksha: The ancient art of reading the inner body's complex biological rhythms.</p>
+</div>
+</div>
+<div class="relative h-[450px] rounded-xl overflow-hidden group lg:mt-12">
+<img alt="Panchakarma" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Bowls of colorful ayurvedic powders and herbs arranged on a wooden table, artistic overhead shot with soft shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd5cnEHhdlZS_a5ZPX9shky2TmdjYqBOfSHyeSG_avLxiyZqjuTxeHM8BBNAeIGqJ9udhHibbcW90NmNFRcOliPJzaV_oLdknoDbh2tZ7XZghvKcGigtVNMXxp9llwnh4cy3IbAoqMg1Srn4nc2qtsU2Fq8dQ6HcYw66wwTGW84wN0OKTZmdSCtpjDVlClzfsuiJFmd6R-fTiHEdpdOwy3DDLBZRa1XosAyVRg-RW-Uc8TyTvj0AEWbxmeA2dTipoXDEJB61lL6_EP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-emerald-950/90 to-transparent flex flex-col justify-end p-8">
+<h4 class="text-white font-headline text-2xl mb-2">Detoxification</h4>
+<p class="text-white/80 text-sm">Panchakarma rituals designed to purge toxins and reset your metabolic fire (Agni).</p>
+</div>
+</div>
+<div class="relative h-[450px] rounded-xl overflow-hidden group">
+<img alt="Ayurvedic herbology" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Macro photo of dried herbs and flowers in an apothecary jar, soft focused background, high-end editorial feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3A8_5EQg8P6xurXJ1MlCo4c_IvfBMDWslOK-qmx8pOQPLJIvMKg123J6QGSydLkaLEIseIyOq4f-h0R26DYL_98qATCS5R1YKzkEQpdEOFYWE0tbVut5lRsYYCtuB0a01kt-4lxGqK4h8ePElIyJxPJGsQldKQ-pCgr3bB2ikATG3ln5y044UB_F9LLQkx2aNJLKvbCi_M8827sgzHbYXVrR8YbUQ0Q_GOFkbhuwsp50dLq7X9kGr7Wum3bDFnG6jWSO6tDUGe_vS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-emerald-950/90 to-transparent flex flex-col justify-end p-8">
+<h4 class="text-white font-headline text-2xl mb-2">Personalized Herbology</h4>
+<p class="text-white/80 text-sm">Bespoke herbal formulations tailored to your unique genetic constitution (Prakriti).</p>
+</div>
+</div>
+<div class="relative h-[450px] rounded-xl overflow-hidden group lg:mt-12">
+<img alt="Skin Rituals" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Drip of golden oil on a smooth stone, aesthetic and serene wellness imagery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtnDSGcjuv5o7zUB776NMu36-YGQicjt-nx_8nbjpsXOYntPaKC2MoeSvZwgnAC7C5a6IbWp-tUde1zlonYi4_PsIdBiJGFc16QjS0Xu_tfpJp05j4SQaMZZ_-WyfGRc391e5o9DLUGtxmu0bYcRbPJFqGa0mmJjY_H8z5--GN1-OYAj36WPMQvp5qxxMvI5AidhZrmDuuAy1EtbUGIUBltoSIDVVVcj5nxhuE4VZ_45oHdQ5SSlqZ5skiSfzBOjdQ6dUhgat8R8qg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-emerald-950/90 to-transparent flex flex-col justify-end p-8">
+<h4 class="text-white font-headline text-2xl mb-2">Skin Alchemy</h4>
+<p class="text-white/80 text-sm">Holistic dermatology treating internal imbalances for external radiance and luminosity.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet Our Specialists -->
+<section id="specialists" class="py-32 px-12 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="fade-in-left">
+<span class="font-label uppercase tracking-widest text-primary text-xs font-bold mb-4 block">The Alchemists</span>
+<h2 class="font-headline text-5xl text-on-background mb-10 leading-tight">Guided by Experience,<br/>Rooted in Care</h2>
+<div class="space-y-12">
+<div class="flex gap-8 group">
+<div class="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 shadow-lg border-2 border-primary-container/20">
+<img alt="Dr. Komal Thakkar" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Portrait of a female doctor with a kind expression, wearing a white coat, in a bright modern medical office." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9kO0Fo3spJKrnFbAeWzm0h8L2oz7GciBmtzWFoxmA3bfWld5iEB4INF2VVB2onhTzIAbz0lSZmQrwC7u8JFKv7sWjXPRQP_7D5p9-tr6cfs2v0wprnsIW8xvEUQzVSImeOT-IAiLTpzOlk7lRi-nu8HEbOCQQDu8pkFB7rX7ntEbMGKsCuoZchLeWteYSkHs2oCeqyfYrEckM1EXLvdNgIjuj8V_SYxmVnqqxPT5lkha6htcYE_JDGvYv5W4rn-gSyvCSIU1GO7Lr"/>
+</div>
+<div>
+<h4 class="font-headline text-2xl mb-1">Dr. Komal Thakkar</h4>
+<p class="font-label text-xs uppercase tracking-widest text-primary font-bold mb-3">Senior Consultant, Nadi Pariksha</p>
+<p class="text-on-surface-variant leading-relaxed">With 20 years of practice in Kerala's most revered clinics, Dr. Varma specializes in complex metabolic disorders.</p>
+</div>
+</div>
+<div class="flex gap-8 group">
+<div class="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 shadow-lg border-2 border-primary-container/20">
+<img alt="Dr. Vaidya Ujjaval Thakkar" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Portrait of a male doctor with glasses, confident and approachable, in a bright clinic setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0r2efEk_U3ucWjpGkGWljxhhA1wRy9tG6ZuwNMSi7dJtKP8fQg9nytpTarwV_Vb6xNTZmeWIv0Xl43feu81lhauO6HQz0Ei1QzbOxLQ8Pm9kgARZlc6m3h-v3iHSWHd29R6lYAyFHmZc3rpkQpB8WkNQkCsztLXw1GWrRghy8hC7bHfMZz4_dk6UedpYRC1wcGywNFI6tOEpWkY5jn_gNYopCFIa4uG_ea0MDgB0EzsBumu4KEdCQ2SsYjIcsSXlWTQj07n74uAkl"/>
+</div>
+<div>
+<h4 class="font-headline text-2xl mb-1">Dr. Vaidya Ujjaval Thakkar</h4>
+<p class="font-label text-xs uppercase tracking-widest text-primary font-bold mb-3">Clinical Herbology Lead</p>
+<p class="text-on-surface-variant leading-relaxed">Dr. Thorne bridges the gap between pharmacology and herbalism, focusing on botanical synergy and bioavailability.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high aspect-square rounded-2xl overflow-hidden relative fade-in-right">
+<img alt="Consultation Room" class="w-full h-full object-cover opacity-90" data-alt="A minimalist and peaceful medical consultation room with wooden furniture, indoor plants, and soft sunlight streaming through linen curtains." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD-rk0VP6PECwt_dRxuK0b-XL5xrdpxJvII2Y1bK66zN-l7fGVNA56mOr5L_BRsWz60WBvm3QPZx3rgPGoKbf8UFABaweRGD-F82zCi0mcKYFuaJ-zMZ33QvLjwyPlzceFb4n7iweXlSUTmGxtUq3dlc6YVwSsF8Yap0IcTzfpxsRjtB18FbC9k3-9t5qRIUGOkyPbx0fvM7uvDtsqCUzJq7cmNTtKWT-c00v2c_RD3nqyN2xBEYiv7-pALcZMfqM1HYHoPbHvrBO3"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Whispers of Transformation (Reviews) -->
+<section id="reviews" class="py-32 px-12 bg-secondary-container/10">
+<div class="max-w-screen-2xl mx-auto text-center">
+<h2 class="font-headline text-4xl mb-16 italic fade-in-up">Whispers of Transformation</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="p-10 bg-white rounded-2xl shadow-sm border border-stone-100 flex flex-col items-center text-center fade-in-up review-card">
+<div class="flex text-tertiary-container mb-6 star-rating">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; --star-index: 0;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; --star-index: 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; --star-index: 2;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; --star-index: 3;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; --star-index: 4;">star</span>
+</div>
+<p class="text-on-surface-variant italic mb-8">"The pulse diagnosis was eerily accurate. Dr. Varma identified imbalances I hadn't even mentioned. My energy levels have never been better."</p>
+<p class="font-label text-xs uppercase tracking-widest font-bold">&mdash; Elena R., Paris</p>
+</div>
+<div class="p-10 bg-white rounded-2xl shadow-sm border border-stone-100 flex flex-col items-center text-center transform scale-105 border-primary/10 fade-in-up delay-200 review-card">
+<div class="flex text-tertiary-container mb-6 star-rating">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; --star-index: 0;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; --star-index: 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; --star-index: 2;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; --star-index: 3;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; --star-index: 4;">star</span>
+</div>
+<p class="text-on-surface-variant italic mb-8">"Finally, a medical practice that sees me as a whole person. The ritual of their personalized herbology is now a sacred part of my morning."</p>
+<p class="font-label text-xs uppercase tracking-widest font-bold">&mdash; Marcus D., Berlin</p>
+</div>
+<div class="p-10 bg-white rounded-2xl shadow-sm border border-stone-100 flex flex-col items-center text-center fade-in-up delay-400 review-card">
+<div class="flex text-tertiary-container mb-6 star-rating">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; --star-index: 0;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; --star-index: 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; --star-index: 2;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; --star-index: 3;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; --star-index: 4;">star</span>
+</div>
+<p class="text-on-surface-variant italic mb-8">"The transformation in my chronic skin issues after just three months was profound. jaydev Ayurved is truly where science meets soul."</p>
+<p class="font-label text-xs uppercase tracking-widest font-bold">&mdash; Priya S., Mumbai</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Book Your Ritual -->
+<section id="booking" class="py-32 px-12 bg-surface">
+<div class="max-w-4xl mx-auto bg-surface-container-lowest rounded-[2rem] overflow-hidden shadow-[0_20px_40px_rgba(22,29,29,0.06)] border border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-2">
+<div class="p-12 md:p-16">
+<h2 class="font-headline text-4xl mb-6 fade-in-up">Book Your Ritual</h2>
+<p class="text-on-surface-variant mb-10 leading-relaxed">Begin your path to harmony. Choose a time for your initial diagnostic consultation.</p>
+<form class="space-y-6">
+<div>
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold mb-2 block">Full Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-primary/10 transition-all" placeholder="Enter your name" type="text"/>
+</div>
+<div>
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold mb-2 block">Focus Area</label>
+<select class="w-full bg-surface-container-low border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-primary/10 transition-all">
+<option>Pulse Diagnosis</option>
+<option>Digestive Wellness</option>
+<option>Stress &amp; Resilience</option>
+<option>Skin Alchemy</option>
+</select>
+</div>
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-white py-5 rounded-xl font-bold shadow-lg hover:opacity-90 transition-all mt-4">
+                                Schedule Consultation
+                            </button>
+</form>
+</div>
+<div class="hidden md:block relative">
+<img alt="Appointment booking" class="w-full h-full object-cover" data-alt="A high-end apothecary shelf with glass jars and fresh herbs, warm natural lighting, clean and organized Ayurvedic clinic setting." src="https://images.pexels.com/photos/4044070/pexels-photo-4044070.jpeg?auto=compress&cs=tinysrgb&w=800"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[2px]"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- SideNavBar (Consultation FAB) -->
+<div class="fixed bottom-8 right-8 z-50 flex items-center justify-center">
+<a class="bg-emerald-800 dark:bg-emerald-900 text-white rounded-full p-6 shadow-[0_20px_40px_rgba(40,106,66,0.2)] hover:scale-110 hover:rotate-3 transition-transform flex items-center gap-3" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="font-label uppercase tracking-widest text-xs font-bold hidden md:inline">Consultation</span>
+</a>
+</div>
+<!-- Footer -->
+<footer class="w-full border-t border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-24 max-w-screen-2xl mx-auto">
+<div class="md:col-span-1">
+<div class="font-headline text-3xl text-emerald-950 dark:text-emerald-50 mb-6">Jaydev Ayurved</div>
+<p class="font-manrope text-sm leading-relaxed text-stone-500 dark:text-stone-400">Rooted in Ayurveda, Refined by Science. Our mission is to restore harmony to the human experience.</p>
+</div>
+<div>
+<h5 class="font-label text-xs uppercase tracking-widest text-emerald-900 font-bold mb-6">Explore</h5>
+<nav class="flex flex-col gap-4 font-manrope text-sm">
+<a class="text-stone-500 hover:text-emerald-600 transition-colors" href="#about">Our Story</a>
+<a class="text-stone-500 hover:text-emerald-600 transition-colors" href="#rituals">The Alchemy Lab</a>
+<a class="text-stone-500 hover:text-emerald-600 transition-colors" href="#specialists">Clinical Studies</a>
+</nav>
+</div>
+<div>
+<h5 class="font-label text-xs uppercase tracking-widest text-emerald-900 font-bold mb-6">Patient Care</h5>
+<nav class="flex flex-col gap-4 font-manrope text-sm">
+<a class="text-stone-500 hover:text-emerald-600 transition-colors" href="#rituals">Rituals</a>
+<a class="text-stone-500 hover:text-emerald-600 transition-colors" href="#booking">Consultations</a>
+<a class="text-stone-500 hover:text-emerald-600 transition-colors" href="#">Privacy Policy</a>
+</nav>
+</div>
+<div>
+<h5 class="font-label text-xs uppercase tracking-widest text-emerald-900 font-bold mb-6">Connect</h5>
+<div class="flex gap-4 mb-6">
+<a class="text-stone-500 hover:text-emerald-600" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-stone-500 hover:text-emerald-600" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+<p class="text-stone-500 text-sm">&copy; 2026 Jaydev Ayurved. Rooted in Ayurveda, Refined by Science.</p>
+</div>
+</div>
+</footer>
+<script src="script.js" defer></script>
+</body></html>
